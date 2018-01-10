@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PhotoDo</string>
+    <string name="take_a_pic">Take a pic!</string>
+    <string name="copy">Copy</string>
+    <string name="speak">Speak</string>
+    <string name="save_to_note">Save to Note</string>
+    <string name="airtime">Air Time</string>
+    <string name="share_text">Share Text</string>
+    <string name="camera_fuction">Take Image to extrant Content</string>
+    <string name="hint">Captured Image Text</string>
+    <string name="take_pic">Take Pic!</string>
+</resources>
