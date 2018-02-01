@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            <ion-icon name="done-all"></ion-icon>
+            PhotoDo
+            <ion-icon name="shuffle"></ion-icon>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-row justify-content-center>
+        <ion-col col-8>
+            <ion-item>
+                <ion-img (click)="takePic()" width="80" height="80" [src]="imgsrc" [hidden]="flip"></ion-img>
+            </ion-item>
+        </ion-col>
+        <ion-col col-8>
+            <ion-item *ngIf="flip">
+                <ion-icon name="text"></ion-icon>
+                <ion-textarea rows="2" cols="1" placeholder="Image extracted text"></ion-textarea>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+    <button ion-button color="secondary" (click)="fliper()">Secondary</button>
+    <hr>
+    <ion-grid>
+        <ion-row>
+            <ion-col padding>
+                <div>
+                    <ion-icon name="call"></ion-icon>
+                    <p>Call </p>
+                </div>
+            </ion-col>
+            <ion-col padding>
+                <div>
+                    <ion-icon name="call"></ion-icon>
+                    <ion-icon name="cloud-download"></ion-icon>
+                    <p>Load airtime </p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col padding>
+                <div>
+                    <ion-icon name="volume-up"></ion-icon>
+                    <p>Speak</p>
+                </div>
+            </ion-col>
+
+            <ion-col padding>
+                <div>
+                    <ion-icon name="share"></ion-icon>
+                    <p>Share </p>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col padding>
+                <div>
+                    <ion-icon name="bookmark"></ion-icon>
+                    <p>Save to note</p>
+                </div>
+            </ion-col>
+
+            <ion-col padding>
+                <div>
+                    <ion-icon name="clipboard"></ion-icon>
+                    <p>Copy to clip board</p>
+                </div>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
